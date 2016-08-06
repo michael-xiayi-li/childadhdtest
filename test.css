@@ -1,0 +1,125 @@
+
+li{
+    list-style-type: none;
+    text-align: center;
+    display: inline;
+    top: 10px;
+}
+
+#rating_bar {
+    width:600px;
+    height:40px;
+    margin: 3px 175px !important;
+    
+    display:inline-block;
+}
+
+
+#rating_bar > label {
+    float: right;
+    position:relative;
+    top:-50px;
+    right:100px;
+    text-align: center;
+}
+#rating_bar > input {
+    display: none;
+}
+#rating_bar > label:before {
+    content: "\25A0";
+
+    width: 400px 
+    height: 200px;
+
+    color: #c7c5c5;
+    cursor:pointer;
+    font-size:15em;
+}
+#rating_bar > label:hover:before {
+    color: #4bce32;
+}
+#rating_bar > label:hover ~ label:before {
+    color: #4bce32;
+}
+
+
+#rating_bar {
+    width:600px;
+    height:40px;
+    margin: 3px 175px !important;
+    
+    display:inline-block;
+}
+
+
+#performancerating_bar > label {
+    float: right;
+    position:relative;
+    top:-50px;
+    right:80px;
+}
+#performancerating_bar > input {
+    display: none;
+}
+#performancerating_bar > label:before {
+    content: "\25A0";
+
+    width: 400px 
+    height: 200px;
+
+    color: #c7c5c5;
+    cursor:pointer;
+    font-size:15em;
+}
+#performancerating_bar > label:hover:before {
+    color: #4bce32;
+}
+#performancerating_bar > label:hover ~ label:before {
+    color: #4bce32;
+}
+
+
+#qualitativerating{
+    position:relative;
+    top:150px;
+    left:380px;
+    font-size:29px;
+    text-align: center;
+    vertical-align: middle
+}
+
+#performancequalitativerating{
+    position:relative;
+    top:150px;
+    left:380px;
+    font-size:29px;
+    white-space: nowrap;
+}
+
+#qualitativeratingalt{
+    position:relative;
+    top:205px;
+    left:345px;
+    font-size:29px;
+    text-align: center;
+    vertical-align: middle
+
+}
+
+.progress{
+
+    position:relative;
+    top:230px;
+    left:0px;
+    margin: 0 auto;
+    width:796px;
+
+
+}
+
+.performanceprogress{
+    position:relative;
+    top:230px;
+    left:0px;
+    margin: 0 auto;
+}
