@@ -1,1 +1,286 @@
-rating.html 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Popup contact form</title>
+
+
+<!--replace with bootstrap link later-->
+
+
+<!--bootstrap-->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="test.css">
+
+<link href="css/elements.css" rel="stylesheet">
+<script src="js/my_js.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
+
+
+
+
+</head>
+<!-- Body Starts Here -->
+<body id="body" style="overflow:hidden;">
+<div id="abc">
+<!-- Popup Div Starts Here -->
+<div id="popupContact">
+<!-- Contact Us Form -->
+<form action="#" id="form" method="post" name="form">
+<img id="close" src="images/3.png" onclick ="div_hide()">
+<h2>ADHD Rating System</h2>
+
+<ul id="questionlist">
+    <li  id="questionnumber">
+      1.
+    </li>
+    <li id="questions">
+      Does not pay attention to details or makes careless mistakes 
+    </li>
+</ul>
+<div id="ratingbody">
+<div id="rating_bar">
+    <input  type="radio" id="rate_5" name="Very Often" value="3" />
+    <label for="rate_5" onmouseover="sayrating(3,'qualitativerating')"  onclick="submitscore(3,'questionnumber','questions')"></label>
+    <input type="radio" id="rate_4" name="Often" value="2"/>
+    <label for="rate_4"  onmouseover="sayrating(2,'qualitativerating')" onclick="submitscore(2,'questionnumber','questions')"></label>   
+    <input type="radio" id="rate_3" name="Occasionally" value="1" />
+    <label for="rate_3" onmouseover="sayrating(1,'qualitativerating')"  onclick="submitscore(1,'questionnumber','questions')"></label>
+    <input type="radio" id="rate_2" name="Never" value="0" />
+    <label for="rate_2" onmouseover="sayrating(0,'qualitativerating')"  onclick="submitscore(0,'questionnumber','questions')"></label>
+    
+</div>
+
+<div>
+
+<a id="qualitativerating">Never</a>
+
+</div>
+
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="0"
+  aria-valuemin="0" aria-valuemax="57" style="width:0%">
+    <span class="sr-only"></span>
+  </div>
+</div>
+
+</div>
+
+<ul>
+  <li>
+
+  <label id="backbutton" onclick="goback('questionnumber','questions')">
+  Back
+  </label>
+  </li>
+  <li>
+  <label id="skipbutton" onclick="skip('questionnumber','questions')">
+  Skip
+  </label>
+  </li>
+</ul>
+<!--
+<div class="box box-blue box-example-movie">
+  <div class="box-header">Movie Rating</div>
+    <div class="box-body">
+      <select id="example-movie" name="rating">
+        <option value="Bad">Bad</option>
+        <option value="Mediocre">Mediocre</option>
+        <option value="Good" selected="selected">Good</option>
+        <option value="Awesome">Awesome</option>
+      </select>
+ </div>
+</div>
+          
+-->
+
+
+
+
+<!--<img id=ratingscale src="images/thermometer.PNG"  >-->
+<!--
+<input id="name" name="name" placeholder="Name" type="text">
+<input id="email" name="email" placeholder="Email" type="text">
+<textarea id="msg" name="message" placeholder="Message"></textarea>
+<a href="javascript:%20check_empty()" id="submit">Send</a>-->
+</form>
+</div>
+<!-- Popup Div Ends Here -->
+</div>
+<!-- Display Popup Button -->
+
+
+
+<div id="secondquestionset">
+<!-- Popup Div Starts Here -->
+<div id="popupContact">
+<!-- Contact Us Form -->
+<form action="#" id="form" method="post" name="form">
+<img id="close" src="images/3.png" onclick ="perf_hide()">
+<h2>ADHD Rating System</h2>
+
+<ul id="performancequestionlist">
+    <li  id="performancequestionnumber">
+      47.
+    </li>
+    <li id="performancequestions">
+      Overall School Performance
+    </li>
+</ul>
+<div id="performanceratingbody">
+<div id="performancerating_bar">
+    <input  type="radio" id="rate_5alt" name="Problematic" value="5" />
+    <label for="rate_5" onmouseover="sayrating(5,'performancequalitativerating')"  onclick="submitscore(5,'performancequestionnumber','performancequestions')"></label>
+    <input  type="radio" id="rate_4alt" name="Somewhat of a Problem" value="4" />
+    <label for="rate_5" onmouseover="sayrating(4,'performancequalitativerating')"  onclick="submitscore(4,'performancequestionnumber','performancequestions')"></label>
+    <input type="radio" id="rate_3alt" name="Average" value="3"/>
+    <label for="rate_4"  onmouseover="sayrating(3,'performancequalitativerating')" onclick="submitscore(3,'performancequestionnumber','performancequestions')"></label>    
+    <input type="radio" id="rate_2alt" name="Above Average" value="2" />
+    <label for="rate_3" onmouseover="sayrating(2,'performancequalitativerating')"  onclick="submitscore(2,'performancequestionnumber','performancequestions')"></label>
+    <input type="radio" id="rate_1alt" name="Excellent" value="1" />
+    <label for="rate_2" onmouseover="sayrating(1,'performancequalitativerating')"  onclick="submitscore(1,'performancequestionnumber','performancequestions')"></label>
+    
+</div>
+
+
+
+<a id="performancequalitativerating">Excellent</a>
+
+
+
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="0"
+  aria-valuemin="0" aria-valuemax="57" style="width:86.0381%">
+    <span class="sr-only"></span>
+  </div>
+</div>
+
+</div>
+
+<ul>
+  <li>
+
+  <label id="backbutton" onclick="goback('performancequestionnumber','performancequestions')">
+  Back
+  </label>
+  </li>
+  <li>
+  <label id="skipbutton" onclick="skip('performancequestionnumber','performancequestions')">
+  Skip
+  </label>
+  </li>
+</ul>
+<!--
+<div class="box box-blue box-example-movie">
+  <div class="box-header">Movie Rating</div>
+    <div class="box-body">
+      <select id="example-movie" name="rating">
+        <option value="Bad">Bad</option>
+        <option value="Mediocre">Mediocre</option>
+        <option value="Good" selected="selected">Good</option>
+        <option value="Awesome">Awesome</option>
+      </select>
+ </div>
+</div>
+          
+-->
+
+
+
+
+<!--<img id=ratingscale src="images/thermometer.PNG"  >-->
+<!--
+<input id="name" name="name" placeholder="Name" type="text">
+<input id="email" name="email" placeholder="Email" type="text">
+<textarea id="msg" name="message" placeholder="Message"></textarea>
+<a href="javascript:%20check_empty()" id="submit">Send</a>-->
+</form>
+</div>
+<!-- Popup Div Ends Here -->
+</div>
+
+
+
+
+<div id="assessment">
+<!-- Popup Div Starts Here -->
+<div id="popupContact">
+<!-- Contact Us Form -->
+<form action="#" id="form" method="post" name="form">
+<img id="close" src="images/3.png" onclick ="assess_hide()">
+<h2>ADHD Rating System</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Subset</th>
+    <th>Assessment</th>
+  </tr>
+  <tr>
+    <td>Inattentiveness</td>
+     <td id="inscore"></td>
+    
+  </tr>
+  <tr>
+    <td>Hyperactivity/Impulsiveness</td>
+    <td id="hyscore"></td>
+    
+
+  </tr>
+    
+  <tr>
+    <td>Combined Inattentiveness/Hyperactivity</td>
+    <td id="combscore"></td>
+    
+  </tr>
+  <tr>
+    <td>Oppositional-Defiance</td>
+    <td id="oppscore"></td>
+   
+  </tr>
+  <tr>
+    <td>Conduct Disorder</td>
+    <td id="cdscore"></td>
+    
+  </tr>
+  <tr>
+     <td>Anxiety/Depression</td>
+     <td id="anscore"></td>
+  </tr>
+
+</table>
+
+          
+
+
+
+
+
+<!--<img id=ratingscale src="images/thermometer.PNG"  >-->
+<!--
+<input id="name" name="name" placeholder="Name" type="text">
+<input id="email" name="email" placeholder="Email" type="text">
+<textarea id="msg" name="message" placeholder="Message"></textarea>
+<a href="javascript:%20check_empty()" id="submit">Send</a>-->
+</form>
+</div>
+<!-- Popup Div Ends Here -->
+</div>
+
+
+
+
+
+
+<button id="popup" onclick="div_show()">Popup</button>
+</body>
+<!-- Body Ends Here -->
+</html>
+
+
