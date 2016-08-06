@@ -1,0 +1,389 @@
+@import "http://fonts.googleapis.com/css?family=Raleway";
+/*----------------------------------------------
+CSS settings for HTML div Exact Center
+------------------------------------------------*/
+#abc {
+width:100%;
+height:100%;
+opacity:.95;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#313131;
+overflow:auto
+}
+
+a:hover{
+
+  text-decoration: none;
+}
+#secondquestionset {
+width:100%;
+height:100%;
+opacity:.95;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#313131;
+overflow:auto
+}
+
+#assessment{
+
+  width:100%;
+  height:100%;
+  opacity:.95;
+  top:0;
+  left:0;
+  display:none;
+  position:fixed;
+  background-color:#313131;
+  overflow:auto
+
+}
+
+
+#secondquestionset{
+  display:none;
+}
+
+#questions{
+
+
+  font-size:1.5em;
+}
+#performancequestions{
+
+
+  font-size:1.5em;
+}
+
+#questionnumber{
+  width: 200px; 
+    font-size:2em;
+    color: black;
+
+}
+
+#performancequestionnumber{
+  width: 200px; 
+    font-size:2em;
+    color: black;
+
+}
+.question{
+     display: display:inline-block;
+     width: 200px; 
+    font-size:2em;
+    color: black;
+
+}
+
+.questionformat{
+	top:-10px;
+
+
+
+
+}
+#question { 
+  font-size: 10em;
+}
+
+#ratingscale{
+
+	-ms-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+   position:absolute;
+	left: 400px;
+	background-size: 1000px 1000px;
+
+
+}
+
+
+
+
+img#close {
+position:absolute;
+right:-14px;
+top:-14px;
+cursor:pointer;
+width:25px;
+height:25px;
+}
+div#popupContact {
+position:absolute;
+left:30%;
+top:12%;
+margin-left:-202px;
+font-family:'Raleway',sans-serif
+}
+form {
+min-height:550px;
+max-width:900px;
+min-width:900px;
+padding:10px 50px;
+border:2px solid gray;
+border-radius:10px;
+font-family:raleway;
+background-color:#fff
+}
+p {
+margin-top:30px
+}
+h2 {
+background-color:#FEFFED;
+padding:20px 35px;
+margin:-10px -50px;
+text-align:center;
+border-radius:10px 10px 0 0
+}
+hr {
+margin:10px -50px;
+border:0;
+border-top:1px solid #ccc
+}
+input[type=text] {
+width:82%;
+padding:10px;
+margin-top:30px;
+border:1px solid #ccc;
+padding-left:40px;
+font-size:16px;
+font-family:raleway
+}
+#name {
+background-image:url(../images/name.jpg);
+background-repeat:no-repeat;
+background-position:5px 7px
+}
+#email {
+background-image:url(../images/email.png);
+background-repeat:no-repeat;
+background-position:5px 7px
+}
+textarea {
+background-image:url(../images/msg.png);
+background-repeat:no-repeat;
+background-position:5px 7px;
+width:82%;
+height:95px;
+padding:10px;
+resize:none;
+margin-top:30px;
+border:1px solid #ccc;
+padding-left:40px;
+font-size:16px;
+font-family:raleway;
+margin-bottom:30px
+}
+
+
+/* Boxes */
+/*
+.box-example-movie .br-wrapper {
+  width: 250px;
+  position: absolute;
+  margin: 0px 0 0 -125px;
+  left: 50%;
+}
+
+.box {
+  width: 100%;
+  float: left;
+  margin: 1em 0;
+}
+.box .box-header {
+  text-align: center;
+  font-weight: 400;
+  padding: .5em 0;
+}
+.box .box-body {
+  padding-top: 2em;
+  height: 85px;
+  /* rating widgets will be absolutely centered relative to box body */
+  /*position: relative;
+}
+.box select {
+  width: 120px;
+  margin: 10px auto 0 auto;
+  display: block;
+  font-size: 16px;
+}
+.box-large .box-body {
+  padding-top: 2em;
+  height: 120px;
+}
+.box-orange .box-header {
+  background-color: #edb867;
+  color: white;
+}
+.box-orange .box-body {
+  background-color: white;
+  border: 2px solid #f5d8ab;
+  border-top: 0;
+}
+.box-green .box-header {
+  background-color: #50e3c2;
+  color: white;
+}
+.box-green .box-body {
+  background-color: white;
+  border: 2px solid #92eed9;
+  border-top: 0;
+}
+.box-blue .box-header {
+  background-color: #4278f5;
+  color: white;
+}
+.box-blue .box-body {
+  background-color: white;
+  border: 2px solid #8bacf9;
+  border-top: 0;
+}
+@media print {
+  .star-ratings h1 {
+    color: black;
+  }
+  .star-ratings .stars .title {
+    color: black;
+  .box-orange .box-header,
+  .box-green .box-header,
+  .box-blue .box-header {
+    background-color: transparent;
+    color: black;
+  }
+  .box-orange .box-body,
+  .box-green .box-body,
+  .box-blue .box-body {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+
+
+*/
+
+
+
+
+#backbutton {
+    position: absolute;
+    width:50px;
+    height:20px;
+    
+    color:#FFFFFF;
+    background-color:blue;
+    text-align:center;
+    border: none;
+    bottom:10px;
+    left:35px;
+   /* bottom:-290px;
+    left:-70px;*/
+
+}
+#skipbutton{
+
+   position: absolute;
+    width:50px;
+    height:20px;
+    
+    color:#FFFFFF;
+    background-color:blue;
+    text-align:center;
+    border: none;
+    bottom:10px;
+    right:35px;
+    /*
+    bottom:-290px;
+    right:-680px;
+    */
+
+}
+#skipbutton:after{
+  content:"";
+    position: absolute;
+    left: 100%;
+    top:0px;
+    width:0px;
+    height:0px;
+    border-top:10px solid transparent;
+    border-left:15px solid blue;
+    border-bottom:10px solid transparent;
+
+}
+
+#backbutton:before {
+    content:"";
+    position: absolute;
+    right: 100%;
+    top:0px;
+    width:0px;
+    height:0px;
+    border-top:10px solid transparent;
+    border-right:15px solid blue;
+    border-bottom:10px solid transparent;
+}
+
+#backbutton:after {
+    content:"";
+    position: absolute;
+    left: 100%;
+    top:0px;
+    width:0px;
+    height:0px;
+    border-top:5px solid transparent;
+    
+    border-bottom:5px solid transparent;
+}
+
+#submit {
+text-decoration:none;
+width:100%;
+text-align:center;
+display:block;
+background-color:#FFBC00;
+color:#fff;
+border:1px solid #FFCB00;
+padding:10px 0;
+font-size:20px;
+cursor:pointer;
+border-radius:5px
+}
+span {
+color:red;
+font-weight:700
+}
+button {
+width:10%;
+height:45px;
+border-radius:3px;
+background-color:#cd853f;
+color:#fff;
+font-family:'Raleway',sans-serif;
+font-size:18px;
+cursor:pointer
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
